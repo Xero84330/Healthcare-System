@@ -1,5 +1,5 @@
 from django.urls import path
-from Services.MappingView import (
+from Views.MappingView import (
     MappingListCreateView,
     MappingPatientView,
 )
