@@ -1,0 +1,11 @@
+from django.urls import path
+from Services.MappingView import (
+    MappingListCreateView,
+    MappingPatientView,
+)
+
+
+urlpatterns = [
+    path("", MappingListCreateView.as_view()),
+    path("<int:id>/", MappingPatientView.as_view()),
+]
