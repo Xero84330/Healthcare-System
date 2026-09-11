@@ -22,7 +22,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("Urls.Hello")),
     path("api/auth/", include("Urls.Accounts")),
-    path("api/auth/", include("Urls.Accounts")),
     path("api/patients/", include("Urls.Patients")),
     path("api/doctors/", include("Urls.Doctors")),
     path("api/mappings/", include("Urls.Mapping")),
